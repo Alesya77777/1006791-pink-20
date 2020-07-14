@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Алеся Арутюнян](https://up.htmlacademy.ru/adaptive/20/user/1006791).
-* Наставник: [Неизвестно] (https://up.htmlacademy.ru).
+* Наставник: `Неизвестно`.
 
 ---
 
