@@ -31,3 +31,126 @@
         </div>
       </nav>
     </header>
+    <main class="page-main">
+      <h1 class="page-main__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      <section class="competition">
+        <h2 class="visually-hidden">Анкета участника</h2>
+        <div class="competition__box">
+          <p class="competition__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+        </div>
+        <form class="request" method="GET" action="https://echo.htmlacademy.ru">
+          <fieldset class="request__group">
+            <legend class="visually-hidden">ФИО пользователя</legend>
+            <ul class="request__list">
+              <li class="request__item">
+                <label class="request__label" for="request-surname">Фамилия:</label>
+                <input class="request__input" id="request-surname" type="text" name="surname" value="" placeholder="Укажите фамилию *">
+              </li>
+              <li class="request__item">
+                <label class="request__label" for="request-name">Имя:</label>
+                <input class="request__input" id="request-name" type="text" name="name" value="" placeholder="Введите ваше имя *">
+              </li>
+              <li class="request__item">
+                <label class="request__label" for="request-patronymic">Отчество:</label>
+                <input class="request__input" id="request-patronymic" type="text" name="patronymic" value="" placeholder="Ну и отчество тоже">
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="request__group request__group--gray">
+            <legend class="request__subtitle">Ваши безбашенные достижения в путешествии</legend>
+            <ul class="request__list">
+              <li>
+                <input class="request__label" id="filter-selfie-shark" type="checkbox" name="selfie-shark" checked>
+                <label class="request__input" for="filter-selfie-shark">Сделал селфи с акулой</label>
+              </li>
+              <li>
+                <input class="request__label" id="filter-sunburned-beach" type="checkbox" name="sunburned-beach" checked>
+                <label class="request__input" for="filter-sunburned-beach">Обгорел на пляже</label>
+              </li>
+              <li>
+                <input class="request__label" id="filter-chuck-norris" type="checkbox" name="chuck-norris" >
+                <label class="request__input" for="filter-chuck-norris">Видел Чака Норриса</label>
+              </li>
+              <li>
+                <input class="request__label" id="filter-souvenirs" type="checkbox" name="souvenirs" >
+                <label class="request__input" for="filter-souvenirs">Накупил сувениров</label>
+              </li>
+              <li>
+                <input class="request__label" id="filter-tower" type="checkbox" name="tower" checked>
+                <label class="request__input" for="filter-tower">Удержал башню</label>
+              </li>
+              <li>
+                <input class="request__label" id="filter-hotel" type="checkbox" name="hotel" >
+                <label class="request__input" for="filter-hotel">Разгромил отель</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="request__group">
+            <legend class="visually-hidden">Контактная информация</legend>
+            <ul class="request__list">
+              <li class="request__item">
+                <label class="request__label" for="request-phone">Номер телефона</label>
+                <input class="request__input" id="request-phone" type="tel" name="phone" value="" placeholder="Номер, пожалуйста">
+              </li>
+              <li class="request__item">
+                <label class="request__label" for="request-mail">адрес почты</label>
+                <input class="request__input" id="request-mail" type="email" name="mail" value="" placeholder="Ну и отчество тоже">
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="request__group request__group--gray">
+            <legend class="request__subtitle">С каким приложением путешествовали?</legend>
+            <ul class="request__list">
+              <li>
+                <input class="request__label" id="filter-iOS" type="radio" name="operating-system" value="ios" checked>
+                <label class="request__input" for="filter-iOS">Pink для iOS</label>
+              </li>
+              <li>
+                <input class="request__label" id="filter-android" type="radio" name="operating-system" value="android">
+                <label class="request__input" for="filter-android">Pink на Android</label>
+              </li>
+              <li>
+                <input class="request__label" id="filter-windows-phone" type="radio" name="operating-system" value="windows-phone" >
+                <label class="request__input" for="filter-windows-phone">Windows Phone</label>
+              </li>
+            </ul>
+          </fieldset>
+          <p class="request__subtitle">Опишите свои эмоции</p>
+          <textarea class="request__input request__textarea" placeholder="Можно прям в красках, не стесняясь в выражениях" ></textarea>
+          <button class="request__button" type="submit">Отправить форму</button>
+          <span class="request__desc--pink">*</span>
+          <span class="request__desc">— обязательные поля</span>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <div class="page-footer__wrapper">
+        <div class="page-footer__logo">
+          <a class="page-header__logo" href="index.html">
+            <img src="https://via.placeholder.com/150x150">
+          </a>
+        </div>
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--twitter" href="https//:twitter.com/htmlacademy">Мы в Twitter</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="https//:facebooke.com/htmlacademy">Мы в Facebooke</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="https//:youtube.com/htmlacademy">Мы в Youtube</a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <p class="page-footer__copyright copyright">Разработано
+            <a class="copyright__link visually-hidden" href="https://htmlacademy.ru/intensive/adaptive">htmlacademy</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+
+
