@@ -1,0 +1,41 @@
+.tariff {
+  background-color: $gray-background;
+}
+
+.tariff__item {
+  background-color: $main-text-color;
+  border: $border-table;
+}
+
+.tariff__title {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  color: $white;
+  text-transform: uppercase;
+}
+
+.tariff__cost {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+  color: $white;
+}
+
+.tariff__field {
+  line-height: 30px;
+  background-color: $white;
+  border: $border-table;
+}
+
+.tariff__field--good {
+  background-image: url("../../img/yes.svg");
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+.tariff__field--bad {
+  background-image: url("../../img/no.svg");
+  background-position: right;
+  background-repeat: no-repeat;
+}

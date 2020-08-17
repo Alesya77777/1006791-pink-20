@@ -1,0 +1,26 @@
+.download-application__inner {
+  background-color: $dark-background;
+}
+
+.download-application__link {
+
+  padding: 14px 38px;
+
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  color: $white;
+
+  border: 1px solid $white;
+  border-radius: 50px;
+}
+
+.download-application__list {
+  list-style: none;
+}
+
+.download-application__text {
+  font-weight: 300;
+  line-height: 24px;
+  color: $white;
+}
