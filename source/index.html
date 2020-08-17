@@ -3,56 +3,58 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="page-header">
       <a class="page-header__logo" href="index.html">
-        <img src="https://via.placeholder.com/150x150">
+        <img src="img/logo-pink-white-mobile.svg" alt="Логотип Пинк">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <div class="main_nav__wrapper">
-          <ul class="main-nav__list site_list">
+          <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
-              <a>Главная</a>
+              <a class="site-list__text">Главная</a>
             </li>
             <li class="site-list__item">
-              <a href="photo.html">Фотографии</a>
+              <a class="site-list__text" href="photo.html">Фотографии</a>
             </li>
             <li class="site-list__item">
-              <a href="form.html">Конкурс</a>
+              <a class="site-list__text" href="form.html">Конкурс</a>
             </li>
             <li class="site-list__item">
-              <a href="https://htmlacademy.ru/intensive/adaptive">Htmlacademy</a>
+              <a class="site-list__text" href="https://htmlacademy.ru/intensive/adaptive">Htmlacademy</a>
             </li>
           </ul>
         </div>
       </nav>
     </header>
     <main class="page-main">
-      <h1 class="page-main__title">Взгляните на жизнь иначе!</h1>
+      <div class="page-main__wrapper">
+        <h1 class="page-main__title">Взгляните на жизнь иначе!</h1>
+      </div>
       <section class="download-application">
         <h2 class="visually-hidden">Скачивание приложения</h2>
-        <!--<p class="download-application__tagline"></p>-->
-        <img src="https://via.placeholder.com/150x150">
+        <img src="img/iphone-hand-mobile@1x.png" alt="Скачивание приложения">
         <div class="download-application__inner">
           <a class="download-application__link" href="https://www.apple.com/ru/ios/app-store/">Скачать приложение</a>
           <ul class="download-application__list">
             <li class="download-application__item">
               <a href="https://www.apple.com/ru/ios/app-store/">
-                <img src="https://via.placeholder.com/150x150">
+                <img src="img/logo-apple.svg" alt="Логотип Apple">
               </a>
             </li>
             <li class="download-application__item">
               <a href="https://play.google.com/store">
-                <img src="https://via.placeholder.com/150x150">
+                <img src="img/logo-android.svg" alt="Логотип Android">
               </a>
             </li>
             <li class="download-application__item">
               <a href="https://www.microsoft.com/ru-ru/store/apps/windows">
-                <img src="https://via.placeholder.com/150x150">
+                <img src="img/logo-microsoft.svg" alt="Логотип Microsoft">
               </a>
             </li>
           </ul>
@@ -69,18 +71,18 @@
           <ul class="features__list">
             <li class="features__item">
               <h3 class="features__title">Поднимает настроение</h3>
-              <p class="features_description"></p>
+              <p class="features_description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
             </li>
             <li class="features__item">
-              <h3 class="features__title">Поднимает настроение</h3>
-              <p class="features_description"></p>
+              <h3 class="features__title">Меняет мир вокруг</h3>
+              <p class="features_description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
             </li>
             <li class="features__item">
-              <h3 class="features__title">Поднимает настроение</h3>
-              <p class="features_description"></p>
+              <h3 class="features__title">Заводит новых друзей</h3>
+              <p class="features_description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
             </li>
           </ul>
-          <img src="https://via.placeholder.com/150x150">
+          <img src="img/iphone-screen-mobile@1x.png" alt="Изображение телефона">
         </div>
       </section>
       <section class="reviews">
@@ -89,10 +91,10 @@
           <div class="reviews__list slider__list">
             <blockquote class="reviews__item slider__item">
               <cite class="reviews__author-name">Николай Петров</cite>
-              <p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+              <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </blockquote>
-            <button class="reviews__prev" type="button">Предыдущий отзыв</button>
-            <button class="reviews__next" type="button">Следующий отзыв</button>
+            <button class="reviews__prev" type="button" aria-label="Предыдущий отзыв"><</button>
+            <button class="reviews__next" type="button" aria-label="Следующий отзыв">></button>
           </div>
           <p class="reviews__toggles slider_toggles">
             <button class="slider__toggle slider__toggle--current" type="button">1</button>
@@ -138,19 +140,19 @@
       </section>
       <section class="contact">
         <h2 class="visually-hidden">Контакты</h2>
-        <p>Остались вопросы?<br>
+        <p class="contact__text">Остались вопросы?<br>
           Свяжитесь с нами!
         </p>
         <div class="contact__wrapper">
           <b class="contact__title">Звоните:</b>
           <a class="contact__data" href="tel:+7(812)555-66-66">+7 (812) 555-66-66</a>
-          <b class="contact_title">Пишите:</b>
-          <a class="contact_data" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-          <b class="contact_title">Приезжайте в гости:</b>
-          <span class="contact_data">ул. Большая Конюшенная, 19/8</span>
+          <b class="contact__title">Пишите:</b>
+          <a class="contact__data" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          <b class="contact__title">Приезжайте в гости:</b>
+          <span class="contact__data">ул. Большая Конюшенная, 19/8</span>
         </div>
         <a class="map">
-          <img src="https://via.placeholder.com/150x150">
+          <img src="img/bg-map-mobile@1x.png" alt="Карта с адресом компании Htmlacademy">
         </a>
       </section>
     </main>
@@ -158,25 +160,43 @@
       <div class="page-footer__wrapper">
         <div class="page-footer__logo">
           <a class="page-header__logo" href="index.html">
-            <img src="https://via.placeholder.com/150x150">
+            <img src="img/logo-pink-blue-mobile.svg" alt="Логотип пинк в футере">
           </a>
         </div>
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link social__link--twitter" href="https//:twitter.com/htmlacademy">Мы в Twitter</a>
+              <a class="social__link social__link--twitter" href="https//:twitter.com/htmlacademy">
+                <span class="visually-hidden">Мы в Twitter</span>
+                <svg version="1.0"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M11.283,0.153c1.736-0.485,3.074,0.263,3.685,1.151 c0.694-0.226,1.372-0.47,2.072-0.691c-0.004,0.841-0.538,1.478-0.883,1.727C16.861,2.506,17.5,1.86,17.5,1.86 c-0.175,0.976-1.035,1.746-1.611,1.977C15.65,10.429,12.617,14.793,5.507,14.66c-0.538,0,0.077,0-0.46,0 c-0.422,0-4.29-0.45-5.047-1.843c2.341,0.192,4.011-0.412,4.835-1.15c-0.989-0.293-2.761-0.464-3.07-2.881 c0.362,0.105,0.583,0.223,1.228,0.117C1.757,8.067,0.385,7.366,0.461,5.218c0.294,0.32,1.1,0.523,1.381,0.461 c-0.725-0.235-2.03-3.281-0.921-4.836C2.794,2.654,4.769,4.364,8.29,4.528C8.506,2.288,9.461,0.787,11.283,0.153z" fill="#d22856"/>
+                </svg>
+              </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--facebook" href="https//:facebooke.com/htmlacademy">Мы в Facebooke</a>
+              <a class="social__link social__link--facebook" href="https//:facebooke.com/htmlacademy">
+                <span class="visually-hidden">Мы в Facebooke</span>
+                <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="8.673px" height="18.944px" viewBox="0 0 8.673 18.944" enable-background="new 0 0 8.673 18.944" xml:space="preserve">
+                  <path d="M6.275,3.357c0.799,0,1.599,0,2.398,0c0-1.119,0-2.238,0-3.357c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.115 H0v3.517h1.958c0,3.104,0,6.208,0,9.312c1.279,0,2.558,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.115H5.786 C5.765,5.07,5.75,3.709,6.275,3.357z" fill="#d22856"/>
+                </svg>
+              </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--youtube" href="https//:youtube.com/htmlacademy">Мы в Youtube</a>
+              <a class="social__link social__link--youtube" href="https//:youtube.com/htmlacademy">
+                <span class="visually-hidden">Мы в Youtube</span>
+                <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14.64px" height="13.96px" viewBox="0 0 14.64 13.96" enable-background="new 0 0 14.64 13.96" xml:space="preserve">
+                  <path d="M1.775,13.78C0.799,14.257,0,13.758,0,12.671V1.29c0-1.088,0.799-1.585,1.775-1.109l12.133,5.932 c0.975,0.478,0.975,1.258,0,1.736L1.775,13.78z" fill="#d22856"/>
+                </svg>
+              </a>
             </li>
           </ul>
         </div>
         <div class="page-footer__copyright copyright">
           <p class="page-footer__copyright copyright">Разработано
-            <a class="copyright__link visually-hidden" href="https://htmlacademy.ru/intensive/adaptive">htmlacademy</a>
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+              <span class="visually-hidden">htmlacademy</span>
+              <img src="img/htmlacademy.svg" alt="Логотип htmlacademy">
+            </a>
           </p>
         </div>
       </div>
