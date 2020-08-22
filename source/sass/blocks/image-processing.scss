@@ -1,0 +1,17 @@
+.image-processing {
+  background-color: $gray-background;
+}
+
+.image-processing__list {
+  list-style: none;
+}
+
+.image-processing__button {
+  padding: 15px 90px;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 18px;
+  color: $pink-color-text;
+  border: 3px solid $pink-color-text;
+  border-radius: 50px;
+}
